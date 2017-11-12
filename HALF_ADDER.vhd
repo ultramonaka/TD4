@@ -5,8 +5,8 @@ entity HALF_ADDER is
 	port ( 	
 		A	: in 	std_logic;
 		B 	: in 	std_logic;
-		S 	: out std_logic;
-		C 	: out std_logic 
+		S 	: out 	std_logic;
+		C 	: out 	std_logic
 	);
 end HALF_ADDER;
 

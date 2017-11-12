@@ -39,7 +39,7 @@ begin
 				when	"1101"		=>	Output <= 	X"2000";
 				when	"1110"		=>	Output <= 	X"4000";
 				when	"1111"		=>	Output <= 	X"8000";
-				when 	others		=> Output <= 	X"0000";
+				when 	others		=> Output <= 	"ZZZZZZZZZZZZZZZZ";
 			end case;
 		else
 			Output <= "ZZZZZZZZZZZZZZZZ";

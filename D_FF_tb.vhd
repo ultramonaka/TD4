@@ -20,14 +20,13 @@ component D_FF
 		CK			:	in 	std_logic;
 		PR_n		:	in 	std_logic;
 		Q			:	out 	std_logic;
-		Q_n		:	out 	std_logic
+		Q_n			:	out 	std_logic
 	);
 end component;
 
 begin 
-	comp	:	D_FF
-		port map(clr_n, d, ck, pr_n);
-	
+	comp : D_FF port map(clr_n, d, ck, pr_n);
+
 	process
 	begin
 		clr_n	<=	'1';
@@ -36,12 +35,12 @@ begin
 		pr_n	<=	'1';
 
 		wait for 50 ps;
-		
+
 		d		<= '1';
 		wait for 50 ps;
 		ck 	<=	'1';
 		wait for 50ps; 
-		
-		
+
+
 	end process;
 end;

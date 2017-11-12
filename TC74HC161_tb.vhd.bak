@@ -11,10 +11,10 @@ signal Q_t	:	std_logic_vector(3 downto 0);
 
 signal clr_n	:	std_logic;
 signal lord_n	:	std_logic;
-signal data	:	std_logic_vector(3 downto 0);
-signal ent	:	std_logic;
-signal enp	:	std_logic;
-signal clk	:	std_logic;
+signal data		:	std_logic_vector(3 downto 0);
+signal ent		:	std_logic;
+signal enp		:	std_logic;
+signal clk		:	std_logic;
 
 	component TC74HC161
 		port (

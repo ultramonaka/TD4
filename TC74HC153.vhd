@@ -8,7 +8,7 @@ entity TC74HC153 is
 		G0_n	:	in 	std_logic;
 		G1_n	:	in 	std_logic;
 		G2_n	:	in 	std_logic;
-		G3_n	:	in 	std_logic;	
+		G3_n	:	in 	std_logic;
 		
 		CA		:	in		std_logic_vector(3 downto 0);
 		CB		:	in		std_logic_vector(3 downto 0);
@@ -72,7 +72,7 @@ begin
 	COMP2 : multiplexer port map(G2_n, C2_t, SEL_t, Y2_t);
 	COMP3 : multiplexer port map(G3_n, C3_t, SEL_t, Y3_t);
     
-   Output <= Y0_t & Y1_t & Y2_t& Y3_t;   
+   Output <= Y3_t & Y2_t & Y1_t& Y0_t;   
 
 
 end RTL;

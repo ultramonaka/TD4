@@ -32,7 +32,7 @@ begin
 			when	X"2000"		=>	ENC_out <= 	X"D";
 			when	X"4000"		=>	ENC_out <= 	X"E";
 			when	X"8000"		=>	ENC_out <= 	X"F";
-			when 	others		=> ENC_out <= 	X"0";
+			when 	others		=>  ENC_out <= 	X"0";
 		end case;
 	end process;
 end RTL;
